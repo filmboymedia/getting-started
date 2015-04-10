@@ -1,0 +1,26 @@
+<h1>My Blog</h1>
+
+<%= link_to 'Create New Article', new_article_path %>
+
+<% @articles.each do |article| %>
+  <h2>
+    <%= article.title %>
+  </h2>
+   
+  <div>
+    <%= article.text.html_safe %>
+  </div>
+
+  <p>
+    <span>By:</span>
+    <%= article.author %>
+    <br />
+    <span>Posted:</span>
+    <%= article.date %>
+  </p>
+  <p>
+    <%= link_to 'View', article_path(article) %> | 
+    <%= link_to 'Edit', edit_article_path(article) %>
+  </p>
+  <hr />
+<% end %>

@@ -1,0 +1,20 @@
+<h2>
+  <%= @article.title %>
+</h2>
+ 
+<div>
+  <%= @article.text.html_safe %>
+</div>
+
+<p>
+	<span>By:</span>
+  <%= @article.author %>
+	<br />
+	<span>Posted:</span>
+  <%= @article.date %>
+</p>
+
+<p>
+	<%= link_to 'Back', articles_path %> | 
+	<%= link_to 'Edit', edit_article_path(@article) %>
+</p>
