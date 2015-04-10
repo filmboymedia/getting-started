@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  Mercury::Engine.routes
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -12,10 +11,9 @@ Rails.application.routes.draw do
   #A resource is the term used for a collection of similar objects, such as articles, people or animals. 
   #You can create, read, update and destroy items for a resource and these operations are referred to as CRUD operations.
     Rails.application.routes.draw do
-
-  Mercury::Engine.routes
+ 
       resources :articles
-      
+     
       root 'welcome#index'
     end
 
