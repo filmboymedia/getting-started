@@ -3,8 +3,11 @@
 Lesson at:
 http://guides.rubyonrails.org/getting_started.html
 
+Last Steps Covered: 
+Added comments section to articles.
+
 Next step:
-5.13 Deleting Articles
+7
 
 Push code to github Repo (getting-started):
 git push -u dhh master
