@@ -36,6 +36,13 @@ class ArticlesController < ApplicationController
 	  end
 	end
 
+	def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+ 
+    redirect_to articles_path
+  end
+
 	private
 	  def article_params
 	  	# ".permit()" is used for security...you need to explicitly tell tails what fields can be accepted. 

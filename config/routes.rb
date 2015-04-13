@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   #You can create, read, update and destroy items for a resource and these operations are referred to as CRUD operations.
     Rails.application.routes.draw do
  
-      resources :articles
+      resources :articles do
+        resources :comments
+      end
      
       root 'welcome#index'
     end
