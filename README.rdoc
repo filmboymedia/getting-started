@@ -4,10 +4,10 @@ Lesson at:
 http://guides.rubyonrails.org/getting_started.html
 
 Last Steps Covered: 
-Added comments section to articles.
+Completed comments section to articles (added destroy feature).
 
 Next step:
-7
+9
 
 Push code to github Repo (getting-started):
 git push -u dhh master
