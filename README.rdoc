@@ -12,3 +12,5 @@ Next step:
 Push code to github Repo (getting-started):
 git push -u dhh master
 
+Edgar A.
+
