@@ -4,10 +4,10 @@ Lesson at:
 http://guides.rubyonrails.org/getting_started.html
 
 Last Steps Covered: 
-Completed comments section to articles (added destroy feature).
+All Done
 
 Next step:
-9
+10 (try applying Devise for security)
 
 Push code to github Repo (getting-started):
 git push -u dhh master
