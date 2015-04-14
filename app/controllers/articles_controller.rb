@@ -1,6 +1,11 @@
 class ArticlesController < ApplicationController
+
+	#This is the basic authentication that comes built into rails by default (here it's applied to all application views except: [:index, :show])
+	http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+
+
 	def index
-    @articles = Article.all
+    	@articles = Article.all
   end
 
 	#This will generate each post "[:id]" will be replaced with post ID number

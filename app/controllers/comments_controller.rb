@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  #This is the basic authentication that comes built into rails by default (here it's applied to only: :destroy, since its the only action needing )
+  http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
   def create
     @article = Article.find(params[:article_id])
     @comment = @article.comments.create(comment_params)
